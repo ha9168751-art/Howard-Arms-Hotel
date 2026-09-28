@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Howard Arms Hotel | Brampton</title>
+<meta name="description" content="Howard Arms Hotel, 1 Front St, Brampton CA8 1NG, United Kingdom. Comfortable stay, dining and hospitality.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#202020;background:#f7f5f0;line-height:1.6}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(20,20,20,.94);backdrop-filter:blur(8px)}
+nav{max-width:1120px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{color:#d9b56b;font-weight:800;font-size:20px;letter-spacing:.4px}
+nav ul{display:flex;list-style:none;gap:18px}
+nav a{color:#fff;text-decoration:none;font-size:14px}
+.hero{min-height:100vh;padding:130px 20px 70px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.62)),url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-inner{max-width:760px}
+.badge{display:inline-block;border:1px solid rgba(255,255,255,.45);padding:7px 13px;border-radius:99px;margin-bottom:18px;font-size:13px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.05;margin-bottom:18px}
+.hero p{font-size:clamp(17px,3vw,21px);opacity:.95;margin-bottom:28px}
+.btn{display:inline-block;background:#d9b56b;color:#171717;text-decoration:none;border:0;padding:13px 22px;border-radius:6px;font-weight:700;margin:4px;cursor:pointer}
+.btn.alt{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.65)}
+section{padding:78px 18px}
+.container{max-width:1120px;margin:auto}
+.title{text-align:center;margin-bottom:42px}
+.title h2{font-size:34px;margin-bottom:7px}
+.title p{color:#777}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:35px;align-items:center}
+.about-img{width:100%;border-radius:14px;box-shadow:0 15px 35px rgba(0,0,0,.12)}
+.card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 8px 28px rgba(0,0,0,.07)}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.info{text-align:center;background:#fff;padding:24px 15px;border-radius:12px}
+.icon{font-size:28px;margin-bottom:8px}
+.rooms{background:#eeeae2}
+.room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.room img{width:100%;height:205px;object-fit:cover}
+.room .body{padding:20px}
+.price{font-size:22px;font-weight:800;color:#a67827;margin:9px 0}
+.rate-note{font-size:12px;color:#777}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+.booking{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff}
+.booking-box{max-width:720px;margin:auto;background:rgba(255,255,255,.10);padding:28px;border:1px solid rgba(255,255,255,.18);border-radius:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field.full{grid-column:1/-1}
+label{display:block;margin-bottom:5px;font-size:14px}
+input,select,textarea{width:100%;padding:13px;border:0;border-radius:6px;font-size:15px}
+textarea{min-height:100px;resize:vertical}
+.form-actions{grid-column:1/-1}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-row{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #e4e4e4}
+.contact-row:last-child{border-bottom:0}
+.contact-row b{display:block}
+.contact-row a{color:#176b78}
+footer{background:#151515;color:#fff;text-align:center;padding:30px 18px}
+footer strong{color:#d9b56b}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;text-decoration:none;font-size:26px;box-shadow:0 5px 20px rgba(0,0,0,.25)}
+@media(max-width:800px){
+nav{flex-direction:column;align-items:center}
+nav ul{gap:10px;flex-wrap:wrap;justify-content:center}
+nav a{font-size:12px}
+.about-grid,.contact-grid{grid-template-columns:1fr}
+.info-grid{grid-template-columns:1fr 1fr}
+.room-grid,.gallery{grid-template-columns:1fr}
+.gallery img{height:230px}
+form{grid-template-columns:1fr}
+.field.full,.form-actions{grid-column:auto}
+.hero{padding-top:165px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">HOWARD ARMS HOTEL</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="badge">Brampton • Cumbria • United Kingdom</div>
+<h1>Howard Arms Hotel</h1>
+<p>A welcoming place to stay at 1 Front St, Brampton CA8 1NG.</p>
+<a class="btn" href="#booking">Book Your Stay</a>
+<a class="btn alt" href="#contact">Contact Hotel</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="title"><h2>Welcome to Howard Arms Hotel</h2><p>Comfortable hospitality in Brampton</p></div>
+<div class="about-grid">
+<img class="about-img" src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=85" alt="Hotel room">
+<div class="card">
+<h2>About the Hotel</h2>
+<p>Howard Arms Hotel is located at 1 Front St, Brampton, CA8 1NG, United Kingdom. Use this website to view stay information, contact the hotel and send a booking request.</p>
+<br>
+<p><strong>Check-in:</strong> 3:00 pm<br><strong>Check-out:</strong> 11:00 am</p>
+<br>
+<a class="btn" href="https://howardarms.co.uk" target="_blank" rel="noopener">Visit Official Website</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding-top:20px">
+<div class="container">
+<div class="info-grid">
+<div class="info"><div class="icon">📍</div><b>Location</b><p>Brampton, CA8 1NG</p></div>
+<div class="info"><div class="icon">🕒</div><b>Check-in</b><p>3:00 pm</p></div>
+<div class="info"><div class="icon">🕚</div><b>Check-out</b><p>11:00 am</p></div>
+<div class="info"><div class="icon">🚗</div><b>EV Charging</b><p>Stations nearby/listed</p></div>
+</div>
+</div>
+</section>
+
+<section class="rooms" id="rooms">
+<div class="container">
+<div class="title"><h2>Rooms & Stay</h2><p>Contact the hotel for the exact room and rate for your dates.</p></div>
+<div class="room-grid">
+<div class="card room"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=85" alt="Comfortable hotel room"><div class="body"><h3>Comfortable Room</h3><p>A relaxing room option for your stay.</p><div class="price">Ask for rate</div><a class="btn" href="#booking">Request Booking</a></div></div>
+<div class="card room"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85" alt="Deluxe hotel room"><div class="body"><h3>Deluxe Room</h3><p>More space and comfort for your visit.</p><div class="price">Ask for rate</div><a class="btn" href="#booking">Request Booking</a></div></div>
+<div class="card room"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=85" alt="Family hotel room"><div class="body"><h3>Family Stay</h3><p>A convenient option for families and groups.</p><div class="price">Ask for rate</div><a class="btn" href="#booking">Request Booking</a></div></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="title"><h2>Gallery</h2><p>Hotel-style preview images</p></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=85" alt="Hotel exterior">
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=85" alt="Hotel room">
+<img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=900&q=85" alt="Bedroom">
+<img src="https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&w=900&q=85" alt="Hotel interior">
+<img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=85" alt="Hotel room">
+<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=85" alt="Hotel dining area">
+</div>
+<p style="text-align:center;color:#777;font-size:12px;margin-top:12px">Replace these preview photos with the hotel's actual photos before publishing.</p>
+</div>
+</section>
+
+<section class="booking" id="booking">
+<div class="container">
+<div class="title"><h2 style="color:#fff">Booking Request</h2><p style="color:#ddd">Send your dates and guest details to the hotel.</p></div>
+<div class="booking-box">
+<form action="mailto:YOUR-EMAIL@example.com" method="post" enctype="text/plain">
+<div class="field"><label>Full Name</label><input name="Name" required placeholder="Your name"></div>
+<div class="field"><label>Phone</label><input name="Phone" required placeholder="+44 ..."></div>
+<div class="field"><label>Check-in</label><input type="date" name="Check-in" required></div>
+<div class="field"><label>Check-out</label><input type="date" name="Check-out" required></div>
+<div class="field"><label>Guests</label><select name="Guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+<div class="field"><label>Room</label><select name="Room"><option>Any available room</option><option>Comfortable Room</option><option>Deluxe Room</option><option>Family Stay</option></select></div>
+<div class="field full"><label>Message</label><textarea name="Message" placeholder="Any special request?"></textarea></div>
+<div class="form-actions"><button class="btn" type="submit">Send Booking Request</button></div>
+</form>
+<p style="font-size:12px;color:#ddd;margin-top:12px">Before going live, replace YOUR-EMAIL@example.com with the hotel's booking email, or connect this form to a booking service.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="title"><h2>Contact & Location</h2><p>Howard Arms Hotel</p></div>
+<div class="contact-grid">
+<div class="card">
+<div class="contact-row"><span>📍</span><div><b>Address</b>1 Front St, Brampton CA8 1NG, United Kingdom</div></div>
+<div class="contact-row"><span>📞</span><div><b>Phone</b><a href="tel:+441697742758">+44 16977 42758</a></div></div>
+<div class="contact-row"><span>🌐</span><div><b>Website</b><a href="https://howardarms.co.uk" target="_blank" rel="noopener">howardarms.co.uk</a></div></div>
+<div class="contact-row"><span>🕒</span><div><b>Hours</b>Check-in 3:00 pm • Check-out 11:00 am</div></div>
+</div>
+<div class="card">
+<h3>Find Us</h3>
+<p>Open the hotel location in Google Maps.</p>
+<br>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Howard+Arms+Hotel%2C+1+Front+St%2C+Brampton+CA8+1NG%2C+United+Kingdom" target="_blank" rel="noopener">Open Google Maps</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<strong>Howard Arms Hotel</strong>
+<p>1 Front St, Brampton CA8 1NG, United Kingdom</p>
+<p style="margin-top:6px">© 2026 Howard Arms Hotel</p>
+</footer>
+
+<a class="whatsapp" href="tel:+441697742758" aria-label="Call Howard Arms Hotel">☎</a>
+</body>
+</html>
